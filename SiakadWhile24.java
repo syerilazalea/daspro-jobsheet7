@@ -4,13 +4,14 @@ public class SiakadWhile24 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int jml = 5;                 
+        int jml ;                 
         int nilai;
         int i = 0;         
         int tertinggi = -1;          
         int terendah = 101;          
 
-        System.out.println("Jumlah mahasiswa: " + jml);
+        System.out.print("Jumlah mahasiswa: ");
+        jml = scanner.nextInt();
 
         while (i < jml) {
             System.out.print("Masukkan nilai mahasiswa ke-" + (i + 1) + ": ");
@@ -24,6 +25,7 @@ public class SiakadWhile24 {
 
             if (nilai > 80 && nilai <= 100) {
                 System.out.println("Nilai mahasiswa ke-" + (i + 1) + ": Kategori: A");
+                System.out.println("Bagus Pertahankan Nilainya");
             } else if (nilai > 73 &&  nilai <= 80) {
                 System.out.println("Nilai mahasiswa ke-" + (i + 1) + ": Kategori: B+");
             } else if (nilai > 65 && nilai <= 73) {
