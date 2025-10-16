@@ -6,18 +6,14 @@ public class SiakadFor24 {
         int jumlah = 10;
         System.out.println("Masukkan nilai Kuis untuk " + jumlah + " mahasiswa:");
         double nilai;
-        // baca nilai pertama untuk inisialisasi tertinggi dan terendah
         System.out.print("Masukkan nilai mahasiswa ke-1: ");
         nilai = scanner.nextDouble();
         double tertinggi = nilai;
         double terendah = nilai;
-        int lulus = 0;       // jumlah mahasiswa yang lulus (nilai >= 60)
-        int tidakLulus = 0;  // jumlah mahasiswa yang tidak lulus (nilai < 60)
-
-        // periksa nilai pertama untuk status lulus/tidak
+        int lulus = 0;     
+        int tidakLulus = 0; 
         if (nilai >= 60) lulus++; else tidakLulus++;
 
-        // loop dimulai dari 2 karena nilai pertama sudah dibaca
         for (int i = 2; i <= jumlah; i++) {
             System.out.print("Masukkan nilai mahasiswa ke-" + i + ": ");
             nilai = scanner.nextDouble();
